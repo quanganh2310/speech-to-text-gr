@@ -12,7 +12,7 @@ if (isDev) {
   REACT_DEVELOPER_TOOLS = devTools.REACT_DEVELOPER_TOOLS;
 } // NEW!
 
-function createWindow () {
+async function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 800,
@@ -21,14 +21,15 @@ function createWindow () {
     // frame: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
-      allowRunningInsecureContent: true,
-      webSecurity: false
+      // allowRunningInsecureContent: true,
+      // webSecurity: false,
+      contextIsolation: false,
     }
   })
 
   // and load the index.html of the app.
 //   mainWindow.loadFile('index.html')
-  mainWindow.loadURL('http://localhost:3000')
+  await mainWindow.loadURL('http://localhost:3000')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()

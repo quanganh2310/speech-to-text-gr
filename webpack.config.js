@@ -5,5 +5,6 @@ module.exports = {
   output: {
     path: __dirname + '/static',
     filename: 'webpack-bundle.js'
-  }
+  },
+  target: 'electron-renderer'
 };

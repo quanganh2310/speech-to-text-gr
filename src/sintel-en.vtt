@@ -1,0 +1,7 @@
+WEBVTT
+
+00:00:00.000 --> 99999:00:00.100
+<v Test>[Test. This is caption]</v>
+
+NOTE This is a comment and must be preceded by a blank line
+

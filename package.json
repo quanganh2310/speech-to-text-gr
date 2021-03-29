@@ -2,12 +2,14 @@
   "name": "electron-react-app",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "antd": "^4.12.3",
     "axios": "^0.21.1",
+    "browserify-fs": "^1.0.0",
     "concurrently": "^5.3.0",
     "cor": "^0.0.0",
     "cors": "^2.8.5",
@@ -23,6 +25,7 @@
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
     "vcap_services": "^0.7.1",
+    "vtt-creator": "^1.1.1",
     "wait-on": "^5.2.1",
     "watson-speech": "^0.38.1",
     "web-vitals": "^0.2.4",
@@ -55,6 +58,7 @@
     ]
   },
   "devDependencies": {
+    "babel-plugin-import": "^1.13.3",
     "electron-devtools-installer": "^3.1.1"
   }
 }
